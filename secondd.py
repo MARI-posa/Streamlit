@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(layout="wide")
 
 page_bg_img = """
 <style>
@@ -32,7 +33,7 @@ sea_tips
 st.markdown(f'<h1 style="text-align: center;color:#406278;font-size:38px;">{"Графики, построенные на основе иформации из df Tips:"}</h1>', unsafe_allow_html=True)
 
 #col1,con1,col2,con2=st.beta_columns([0.3,1.2,0.3])
-col1, col2, col3, col4 = st.columns([1,9,9,1])
+col1, col2, col3, col4 = st.columns([1,4,4,1])
 #col1, col2 = st.columns(2)
 
 ### Гистограмма total_bill
