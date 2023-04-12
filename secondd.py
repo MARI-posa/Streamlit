@@ -157,10 +157,11 @@ with col2:
  st.write("""
 ####
 """)
- st.markdown(f'<h1 style="color:#406278;font-size:18px;">{" На графике отображена сумма чаевых, с дополнительной разбивкой по дням недели и времени посещения (Dinner/Lunch)"}</h1>', unsafe_allow_html=True)
- st.write("""
+st.write("""
 ####
 """)
+ st.markdown(f'<h1 style="color:#406278;font-size:18px;">{" На графике отображена сумма чаевых, с дополнительной разбивкой по дням недели и времени посещения (Dinner/Lunch)"}</h1>', unsafe_allow_html=True)
+ 
  sc = sns.FacetGrid(sea_tips, col="time")
  sc.map_dataframe(sns.histplot, 'tip')
  sc.set_xlabels('Чаевые')
