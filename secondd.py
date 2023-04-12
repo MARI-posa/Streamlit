@@ -23,7 +23,7 @@ st.markdown(f'<h1 style="text-align: center;color:#406278;font-size:38px;">{"Ð Ð
 st.markdown(f'<h1 style="color:#406278;font-size:38px;">{"Tips:"}</h1>', unsafe_allow_html=True)
 
 
-path = '~/ds_bootcamp/ds-phase-0/learning/datasets/tips.csv'
+path = 'https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv'
 tips = pd.read_csv(path, index_col=0)
 sea_tips = sns.load_dataset("tips")
 
